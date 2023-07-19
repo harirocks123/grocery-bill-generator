@@ -1,0 +1,178 @@
+#include <stdio.h>
+
+int main()
+{
+     float c[10],w[10],p,sum=0;
+     
+     int j,v,t=0,a[10];
+     
+    printf("enter vegetable codes and weights:\n1 - Potato\n2 - Beans\n3 - Cauliflower\n4 - Cabbage\n5 - Ladiesfinger\n6 - Onion\n7 - Greenchilli\n8 - Broccoli\n9 - Drumstick\n10 - Leafies\n\n");
+    for(int i=0;i<10;i++){
+        a[i]=0;
+    }
+
+    for(int i=0;i<10;i++){
+        scanf("%d",&v);
+    switch(v){
+        
+        case 1:
+        
+        scanf("%f",&w[i]);
+        c[i]=20*w[i];
+        sum+=c[i];
+        a[i]=1;
+        break;
+           
+        case 2:
+        
+        scanf("%f",&w[i]);
+        c[i]=30*w[i];
+        sum+=c[i];
+        a[i]=2;
+        break;
+        
+        case 3:
+        
+        scanf("%f",&w[i]);
+        c[i]=25*w[i];
+        sum+=c[i];
+        a[i]=3;
+        break;
+        
+        case 4:
+        
+        scanf("%f",&w[i]);
+        c[i]=30*w[i];
+        sum+=c[i];
+        a[i]=4;
+        break;
+        
+        case 5:
+        
+        scanf("%f",&w[i]);
+        c[i]=35*w[i];
+        sum+=c[i];
+        a[i]=5;
+        break;
+        
+        case 6:
+        
+        scanf("%f",&w[i]);
+        c[i]=40*w[i];
+        sum+=c[i];
+        a[i]=6;
+        break;
+        
+        case 7:
+        
+        scanf("%f",&w[i]);
+        c[i]=48*w[i];
+        sum+=c[i];
+        a[i]=7;
+        break;
+        
+        case 8:
+        
+        scanf("%f",&w[i]);
+        c[i]=55*w[i];
+        sum+=c[i];
+        a[i]=8;
+        break;
+        
+        case 9:
+        
+        scanf("%f",&w[i]);
+        c[i]=40*w[i];
+        sum+=c[i];
+        a[i]=9;
+        break;
+        
+        case 10:
+        
+        scanf("%f",&w[i]);
+        c[i]=15*w[i];
+        sum+=c[i];
+        a[i]=10;
+        break;
+        
+        case 0:
+        
+        t++;
+        sum=sum+0;
+        break;
+        
+    }  
+    
+    if (t!=0) break;
+    }
+
+    
+    printf("\n\n\n\nVegetable          PricePerKg     Weight     Cost\n");
+    
+    for(j=0;j<10;j++){
+        
+        switch(a[j]){
+            
+            case 1:
+            
+            printf("\nPotato             20%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 2:
+            
+            printf("\nBeans              30%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 3:
+            
+            printf("\nCauliflower        25%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 4:
+            
+            printf("\nCabbage            30%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 5:
+             
+            printf("\nLadiesfinger       35%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 6:
+            
+            printf("\nOnion              40%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 7:
+            
+            printf("\nGreenchilli        48%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 8:
+            
+            printf("\nBroccoli           55%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 9:
+            
+            printf("\nDrumstick          40%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 10:
+            
+            printf("\nLeafies            15%17.2f %12.2f",w[j],c[j]);
+            break;
+            
+            case 0:
+            
+            continue;
+            
+        }
+    } 
+    
+    
+    printf("\n\nTotal%46.2f",sum);
+    
+
+    return 0;
+}
